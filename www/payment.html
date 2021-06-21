@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title>Payment</title>
+    </head>
+    <body id="body3">
+        <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">RK</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payment</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <center>
+            <br>
+            <table id = "table3" width = "1200px" cellpadding ="20px">
+                <tr>
+                    <td colspan="2">
+                        <b> <p id = "langkah">Langkah 1: </p> Sila login ke akaun Maybank2u / CIMBClicks / BankIslam anda dan lakukan 'fund transfer' ke salah satu akaun bank dibawah sebanyak RM 47</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <table>
+                            <tr>
+                                <td>
+                                    <b> Maybank </b>
+                                </td>
+                                <td>
+                                    <b> 562021601450 - Extreme D Enterprice</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b> Bank Islam </b>
+                                </td>
+                                <td>
+                                    <b> 12029020241421 - Mohd Suhaimy Abu Bakar</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b> CIMB </b>
+                                </td>
+                                <td>
+                                    <b> 12180079689520 - Siti Noorhafezah Maarop</b>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b><p id = "langkah">Langkah 2: </p> Selepas itu, simpan resit transaksi yng anda terima dan sila isikan borang pengesahan bayaran dibawah</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type ="checkbox"> <b>Ya! Saya telah membuat pembayaran. Sila hantarkan produk tersebut ke alamat saya seperti dibawah</b>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                    <table width="500px">
+                        <tr>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm"><b>Nama</b></span>
+                                    <input type="text" id="namaForm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm"><b>Email</b></span>
+                                    <input type="text" id="emailForm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm"><b>Telefon</b></span>
+                                    <input type="text" id="telForm" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01"><b>Bank</b></label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                      <option selected>Choose...</option>
+                                      <option value="Maybank">Maybank</option>
+                                      <option value="Bank Islam">Bank Islam</option>
+                                      <option value="CIMB">CIMB</option>
+                                      <option value="Pubic Bank">Pubic Bank</option>
+                                    </select>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-text"><b>Bukti Pembayaran</b></span>
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <br>
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="msg1()">
+                                    Hantar
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Request Success</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <b><p id = "username"></p></b>
+                                            <b><p id = "useremail"></p></b>
+                                            <b><p id = "usertel"></p></b>
+                                            <b><p id = "userbank"></p></b>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b> <p id = "langkah">Langkah 3: </p> Kami akan menyemak maklumat bayaran anda terlebih dahulu dan <u> ebook tersebut akan dihantar ke email anda dalam masa 24 jam</u></b>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

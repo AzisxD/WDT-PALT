@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title>Home</title>
+    </head>
+    <body id="body1">
+        <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">RK</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payment</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <center>
+        <br>
+            <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table id="table1" width = "800px">
+                        <tr align="center">
+                            <td>
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="img/Picture2.png" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/kambing.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <h1><b>Berminat untuk menternak kambing?</b></h1>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <p id="text1"><b>Ketahui... Bagaimana Cara Memulakan Penternakan Kambing Yang Betul Dengan Kos Yang Rendah! Tanpa Perlu Membuat Sebarang Pinjaman!</b></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="table2"width = "1000px">
+                        <tr align="center">
+                            <td>
+                                <h3><b>TIPS & SAMPLE PERCUMA!</b></h3>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                               <b> Dapatkan sample percuma "ebook RahsiaKambing" serta tips-tips menarik mengenai bidang penternakan kambing dari semasa ke semasa dengan melanggan newletter kami. Masukkan nama dan alamat email anda dibawah untuk melanggan.</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <table id="table22" cellpadding="5px">
+                                        <tr>
+                                            <td>
+                                                <b>Nama Panggilan: </b>
+                                            </td>
+                                            <td>
+                                                <input id="nama" type = "text" width ="20px">
+                                            </td>
+                                            <td>
+                                                <b>Email: </b>
+                                            </td>
+                                            <td>
+                                                <input id="email" type = "text" width ="20px">
+                                            </td>
+                                        </tr>
+                                        <center>
+                                        <tr>
+                                            <td colspan="4" align="center">
+                                                <table width="700px">
+                                                    <tr>
+                                                        <td align="center">
+                                                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="welcome()">
+                                                                Berikan Saya Tip PERCUMA Tentang Penternakan Kambing SEKARANG!
+                                                            </button>
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Pendaftaran Berjaya</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <b>Email anda dah didaftarkan</b>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </center>
+                                    </table>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                    <h1><b><p id= "namae"></p></b></h1>
+                </div>
+            </div>
+          </div>
+        </center>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

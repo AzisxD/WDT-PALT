@@ -1,0 +1,35 @@
+#body1{
+    background-image: url("../img/background.jpg");
+}
+
+#body3{
+    background-color: grey;
+}
+
+#text1{
+    display: block;
+    color: blue;
+}
+
+#table2{
+    background-color: aqua;
+}
+
+#table2{
+    border: solid;
+    border-style: dashed;
+}
+
+#table22{
+    border: solid;
+}
+
+#table3{
+    background-color: white;
+    border: solid;
+    padding: 200px;
+}
+
+#langkah{
+    color: red;
+}
